@@ -93,8 +93,9 @@ beween the arm and the hand palm for example) in every capture round.
 ### Running The Algorithm
 
 After you've done taking the calibration and captures depth images, you need to open the control panel.
-If you have MATLAB (this GUI was created using MATLAB R2020a), you can run the ```run_algorithm_gui.mlapp```.
-If not, install the app using the ```app_installer.exe```.
+If you have MATLAB (this GUI was created using MATLAB R2020a), you can run the ```run_algorithm_gui.mlapp```. You'll need 
+to install ``` MATLAB Computer Vision Toolbox ```.
+If you don't have MATLAB on your computer, install the app using the ```app_installer.exe```.
 After the installation is done, open the ```hand_scan_3D``` app that is installed on your computer.
 You'll see the following control panel - 
 
@@ -111,8 +112,8 @@ to the next step check the mid-results to see if they are good -
 * Before running the **registration**, please load one of the aligned point clouds (a/b/c/... .ply) and see if they are \
 aligned correctly. Parts of the hand from differnet cameras will be colored in different colors for making this observation easier.
 * After the **alignment**, run the **denoising before registration**, and load the denoised point clouds (a/b/..._denoised.ply) and see the results.
-* In the **regitration**, remove the point clouds (depth images) which you think might give bad results (for example - noisy point clouds, \
-scans where the hand moved, etc.)
+* In the **regitration**, remove the point clouds (depth images) which you think might give bad results \
+(for example - noisy point clouds, scans where the hand moved, etc.).
 * After the **registration** run the **denoising after registration**.
 * The **registration** point cloud results' names are - 
 	- **registered** - registration of the aligned point clouds.
@@ -120,8 +121,7 @@ scans where the hand moved, etc.)
 	- **final** - registration of the denoised aligned point clouds.
 	- **final_denoised** - denoised **final** point cloud.
 * After the **registration** and **denoising after registration**, check if the results look similar to the scanned hand. If so\
- run the **reconstruction**. To see the **reconstruction** results, open the file in Meshlab or any other application for viewing \
- mesh files.
+ run the **reconstruction**. To see the **reconstruction** results, open the file in Meshlab or any other application for viewing mesh files.
 
 
 #### Control Panel Outputs
@@ -129,7 +129,8 @@ In the bottom of the control panel you'll see a textbox where the output of the 
 Most of it is what the algorithm is running at the moment, and some of it are relevant measurements - 
 After the calibration process is done, several error calculations will be printed.
 For each camera the following error calculations will be printed -
-* **Average Mean Error** - the mean error between the inliers of the sphere and the found sphere model (using MSAC). \
+* **Average Mean Error** - the mean error between the inliers of the sphere and the found sphere model (using \
+MSAC). 
 The lower the number is, the found sphere model is more accurate.
 * **Average Radius Error** - the difference between the average of the found sphere models and the real sphere radius \
 (inserted as a parameter). The smaller it is the more simillar the found sphere models to the real sphere. \
@@ -138,8 +139,7 @@ If this number is large, consider that some of the errors is significant and the
 
 For each pair of cameras the following calculations will be printed -
 * **MSE** - the mean square error between the sphere's centroids after the transformation. \
-In general, low MSE error implies that the transformation is good, but to be sure, \
-check the results of the alignment.
+In general, low MSE error implies that the transformation is good, but to be sure, check the results of the alignment.
 * **Valid spheres percentage** - the percentage of found sphere that their radius was inside of the allowed radius range. \
 for higher values there will be more data to process, but some sphere might not be accurate.
 
