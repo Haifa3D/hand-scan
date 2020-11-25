@@ -118,6 +118,8 @@ You can also read additional information about each of the algorithm parameters 
 For the **reconstruction**, you'll need to download ```PoissonRecon.exe``` from the applications folder.
 Download it to your computer, and add its path to the environment variables by the name **poisson_path**.
 Instructions can be found in the following link -
+
+
 [Create new environment variable](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)
 
 
