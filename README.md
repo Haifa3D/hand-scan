@@ -169,7 +169,7 @@ the point cloud, the matrix of the locations of the points of the point cloud, a
 ## Examples
 Here are the resuls of two scans of different people - 
 
-Here is a scan of the hand of a 30 year old -
+Here is a scan of the hand of a 30 year old as a result of trauma -
 
 
 <img src="/images/results/a/1.PNG" alt="a_1"/>
@@ -181,7 +181,7 @@ Here is a scan of the hand of a 30 year old -
 <img src="/images/results/a/3.PNG" alt="a_3"/>
 
 
-Here is a scan of the hands of a 14 year old -
+Here is a scan of the hands of a 14 year old as a result of trauma -
 
 
 <img src="/images/results/b/1.PNG" alt="b_1"/>
