@@ -105,6 +105,14 @@ You'll see the following control panel -
 Press the HELP button (or the F1 key) for reading the instruction of using the control panel.
 You can also read additional information about each of the algorithm parameters by pressing the **information** tab in the corresponding tab.
 
+For the **reconstruction**, you'll need to download ```PoissonRecon.exe``` from the applications folder.
+Donwload it to your computer, and add its path to the environment variables.
+Instructions can be found in the following link -
+
+
+[!Add path to environment variables] https://docs.alfresco.com/4.2/tasks/fot-addpath.html
+
+
 Our suggestion is that you'll run each step of the algorithm one after another, and before proceeding 
 to the next step check the mid-results to see if they are good -
 * Before running the **alignment**, please check that the **calibration** results were good (in terms of low errors).
