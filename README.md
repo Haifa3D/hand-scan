@@ -99,7 +99,10 @@ If you have MATLAB (this GUI was created using MATLAB R2020a), you can run the `
 If not, install the app using the ```app_installer.exe```.
 After the installation is done, open the ```hand_scan_3D``` app that is installed on your computer.
 You'll see the following control panel - 
+
+
 <img src="/images/application_gui.png" alt="Contol Panel"/>
+
 
 Press the HELP button (or the F1 key) for reading the instruction of using the control panel.
 
