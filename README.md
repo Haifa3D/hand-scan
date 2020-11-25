@@ -7,13 +7,6 @@ In this project we created a low-cost 3D scanner of hands for digital fitting of
 * (optional) MATLAB .
 * (optional) python 3.6 .
 
-## Dependencies
-In order to use or edit the python code you'll need to download the `pyrealsense2` module for python using `pip`:
-```
-pip install pyrealsense2
-```
-In order to use or edit the MATLAB code, you'll need to download the `MATLAB Computer Vision Toolbox` add-on.
-
 
 ## Installation
 First, download ```control_panel_installer.exe``` and ```plane_cut_installer.exe``` and run the installers.
@@ -27,18 +20,31 @@ Instructions can be found in the following link -
 Download ```calibrate_and_capture.exe``` or ```"calibrate_and_capture - no Timer.exe"```.
 You should probably download and use the first one only.
 
+
+## Dependencies
+In order to use or edit the python code you'll need to download the `pyrealsense2` module for python using `pip`:
+```
+pip install pyrealsense2
+```
+In order to use or edit the MATLAB code, you'll need to download the `MATLAB Computer Vision Toolbox` add-on.
+
+
 ## Usage Instructions
-First, you have to capture the calibration depth images and the scans of the hand (called captures).
 
 ### Capture Depth Images
-This is done using the 'capture_and_calibrate' in the python directory.
+First, you have to capture the calibration depth images and the scans of the hand (called captures).
+This is done using the ```capture_and_calibrate.exe```.
 You can use the .exe file (with or without the timer before the capturing), or the python code. In order to run
 the python code you'll need to install the `pyrealsense2` module, as mentioned above.
+
 First Of all, connect the cameras to the computer.
 Once all the cameras are connected, you'll need to run the execution file from the command window.
 Open the command window and change the current directory to the path where the execution file is at.
-First, you'll need to calibrate the system. Remove any objects from the FOV of the cameras, and take the sphere connected to the stick. 
-Once the sphere is in the FOV of the cameras (preferably held by a second person), run the following command (for the version without the timer, replace ```calibrate_and_capture.exe``` with ``` "calibrate_and_capture - no Timer.exe" ```- 
+
+Before scanning the hand, you'll need to calibrate the system. Remove any objects from the FOVs of the cameras, and take the sphere 
+that is connected to the stick. 
+Once the sphere is in the FOVs of the cameras (preferably held by a second person), run the following command 
+(for the version without the timer, replace ```calibrate_and_capture.exe``` with ``` "calibrate_and_capture - no Timer.exe" ```- 
 ```
 calibrate_and_capture.exe NAME --calibrate --calNum calNum
 ```
