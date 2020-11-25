@@ -166,7 +166,7 @@ This will results 3 files -
 the point cloud, the matrix of the locations of the points of the point cloud, and the mesh reconstruction of the point cloud.
 
 
-## Examples
+## Results
 Here are the resuls of two scans of different people - 
 
 Here is a scan of the hand of a 30 year old as a result of trauma -
