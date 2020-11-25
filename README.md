@@ -110,7 +110,7 @@ Donwload it to your computer, and add its path to the environment variables.
 Instructions can be found in the following link -
 
 
-[!Add path to environment variables] https://docs.alfresco.com/4.2/tasks/fot-addpath.html
+[!Add path to environment variables][https://docs.alfresco.com/4.2/tasks/fot-addpath.html]
 
 
 Our suggestion is that you'll run each step of the algorithm one after another, and before proceeding 
