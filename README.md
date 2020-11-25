@@ -172,25 +172,25 @@ Here are the resuls of two scans of different people -
 Here is a scan of the hand of a 30 year old -
 
 
-<img src="/images/results/a/1.png" alt="a_1"/>
+<img src="/images/results/a/1.PNG" alt="a_1"/>
 
 
-<img src="/images/results/a/2.png" alt="a_2"/>
+<img src="/images/results/a/2.PNG" alt="a_2"/>
 
 
-<img src="/images/results/a/3.png" alt="a_3"/>
+<img src="/images/results/a/3.PNG" alt="a_3"/>
 
 
 Here is a scan of the hands of a 14 year old -
 
 
-<img src="/images/results/b/1.png" alt="b_1"/>
+<img src="/images/results/b/1.PNG" alt="b_1"/>
 
 
-<img src="/images/results/b/2.png" alt="b_2"/>
+<img src="/images/results/b/2.PNG" alt="b_2"/>
 
 
-<img src="/images/results/b/3.png" alt="b_3"/>
+<img src="/images/results/b/3.PNG" alt="b_3"/>
 
 
 
