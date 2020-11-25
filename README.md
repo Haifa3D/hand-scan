@@ -1,4 +1,4 @@
-# hand-scan
+# Hand-Scan
 In this project we created a low-cost 3D scanner of hands for later fitting of prosthetic hands.
 
 ## Introduction
@@ -101,7 +101,7 @@ After the installation is done, open the ```hand_scan_3D``` app that is installe
 You'll see the following control panel - 
 
 
-<img src="/images/application_gui.png" alt="Contol Panel"/>
+<img src="/images/application_gui.png" alt="Control Panel"/>
 
 
 Press the HELP button (or the F1 key) for reading the instruction of using the control panel.
