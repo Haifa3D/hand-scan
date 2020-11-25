@@ -108,20 +108,20 @@ Press the HELP button (or the F1 key) for reading the instruction of using the c
 
 Our suggestion is that you'll run each step of the algorithm one after another, and before proceeding 
 to the next step check the mid-results to see if they are good -
-* Before running the **alignment** step, please check that the **calibration** results were good (in terms of low errors).
-* Before running the **registration** step, please load one of the aligned point clouds (a/b/c/... .ply) and see if they are \
+* Before running the **alignment**, please check that the **calibration** results were good (in terms of low errors).
+* Before running the **registration**, please load one of the aligned point clouds (a/b/c/... .ply) and see if they are \
 aligned correctly. Parts of the hand from differnet cameras will be colored in different colors for making this observation easier.
 * After the **alignment**, run the **denoising before registration**, and load the denoised point clouds (a/b/..._denoised.ply) and see the results.
-* In the **regitration** step, remove the point clouds (depth images) which you think might give bad results (for example - noisy point clouds, \
+* In the **regitration**, remove the point clouds (depth images) which you think might give bad results (for example - noisy point clouds, \
 scans where the hand moved, etc.)
-* After the **registration** step run the **denoising after registration**.
+* After the **registration** run the **denoising after registration**.
 * The **registration** point cloud results' names are - 
 	- **registered** - registration of the aligned point clouds.
 	- **registered_denoised** - denoised **registered** point cloud.
 	- **final** - registration of the denoised aligned point clouds.
 	- **final_denoised** - denoised **final** point cloud.
 * After the **registration** and **denoising after registration**, check if the results look similar to the scanned hand. If so\
- run the **reconstruction** step. To see the **reconstruction** results, open the file in Meshlab or any other application for viewing \
+ run the **reconstruction**. To see the **reconstruction** results, open the file in Meshlab or any other application for viewing \
  mesh files.
 
 
