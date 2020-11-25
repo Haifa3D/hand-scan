@@ -1,19 +1,18 @@
 # Hand-Scan
-In this project we created a low-cost 3D scanner of hands for later fitting of prosthetic hands.
-
-## Introduction
+In this project we created a low-cost 3D scanner of hands for digital fitting of prosthetic hands.
 
 
 ## Requirements
-* MATLAB Computer Vision Toolbox
 * 3 or more SR300 Intel depth cameras.
-* (optional) python 3.6
+* (optional) MATLAB .
+* (optional) python 3.6 .
 
 ## Dependencies
 In order to use or edit the python code you'll need to download the `pyrealsense2` module for python using `pip`:
 ```
 pip install pyrealsense2
 ```
+In order to use or edit the MATLAB code you'll need to download the `MATLAB Computer Vision Toolbox` add-on.
 
 ## Usage Instructions
 First, you have to capture the calibration depth images and the scans of the hand (called captures).
@@ -95,7 +94,7 @@ beween the arm and the hand palm for example) in every capture round.
 After you've done taking the calibration and captures depth images, you need to open the control panel.
 If you have MATLAB (this GUI was created using MATLAB R2020a), you can run the ```run_algorithm_gui.mlapp```. You'll need 
 to install ``` MATLAB Computer Vision Toolbox ```.
-If you don't have MATLAB on your computer, install the app using the ```app_installer.exe```.
+If you don't have MATLAB on your computer, install the app using the ```control_panel_installer.exe```.
 After the installation is done, open the ```hand_scan_3D``` app that is installed on your computer.
 You'll see the following control panel - 
 
@@ -111,6 +110,7 @@ to the next step check the mid-results to see if they are good -
 * Before running the **alignment**, please check that the **calibration** results were good (in terms of low errors).
 * Before running the **registration**, please load one of the aligned point clouds (a/b/c/... .ply) and see if they are 
 aligned correctly. Parts of the hand from differnet cameras will be colored in different colors for making this observation easier.
+An important thing to check is if there are objects in the point clouds that were'nt removed in the **segmentation**.
 * After the **alignment**, run the **denoising before registration**, and load the denoised point clouds (a/b/..._denoised.ply) and see the results.
 * In the **regitration**, remove the point clouds (depth images) which you think might give bad results 
 (for example - noisy point clouds, scans where the hand moved, etc.).
@@ -147,6 +147,24 @@ After the registration, the following error calculations will be printed -
 * **RMSE** - the root mean square error of the registration. The smaller the error the better the registartion. 
 For some registrations, the RMSE is small, but the registration is visibly bad, so in order to see if the registration 
 gives good results, load the registered point clouds and check its quality.
+
+
+### Plane Cut GUI
+In this application, you can cut part of the hand that you don't want to have in the final mesh.
+If you have MATLAB (this GUI was created using MATLAB R2020a), you can run the ```pccut_gui_2.mlapp```. You'll need 
+to install ``` MATLAB Computer Vision Toolbox ```.
+If you don't have MATLAB on your computer, install the app using the ```plane_cut_installer.exe```.
+After the installation is done, open the ```plane_cut``` app that is installed on your computer.
+You'll see the following app - 
+
+
+<img src="/images/plane_cut.png" alt="Plane Cut GUI"/>
+
+
+Load the point cloud you want to cut, set the parameters of the plane, and press the save button.
+This will results 3 files - 
+the point cloud, the matrix of the locations of the points of the point cloud, and the mesh reconstruction of the point cloud.
+
 
 
 
