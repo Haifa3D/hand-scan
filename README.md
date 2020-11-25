@@ -33,8 +33,8 @@ the version without the timer, replace ``` calibrate_and_capture.exe ``` with ``
 calibrate_and_capture.exe NAME --calibrate --calNum calNum
 ```
 where - 
-* NAME - you can insert any name here. It is only important for the captures part.
-* calNum - the number of rounds of depth images capturing, used for the calibration process. It need to be large enough, \
+* **NAME** - you can insert any name here. It is only important for the captures part.
+* **calNum** - the number of rounds of depth images capturing, used for the calibration process. It need to be large enough, \
 but not bigger than 29. In each round 15 depth images are taken one after another.
 
 To see the optional arguments, run the following command - 
@@ -55,10 +55,10 @@ After you've done taking the depth images for the calibration, run the following
 calibrate_and_capture.exe NAME --capture --capNum capNum --normals --timer timer
 ```
 where - 
-* NAME - the name of the directory where the captures will be saved.
-* capNum - the number of rounds of depth images capturing. A number between 5 to 10 would be good.
-* normals - add normals to the depth images. This is recommended, but not mandatory.
-* timer - number of seconds to show in the countdown before taking an image.
+* **NAME** - the name of the directory where the captures will be saved.
+* **capNum** - the number of rounds of depth images capturing. A number between 5 to 10 would be good.
+* **normals** - add normals to the depth images. This is recommended, but not mandatory.
+* **timer** - number of seconds to show in the countdown before taking an image.
 
 again, to see the optional arguments, run the following command - 
 ```
@@ -105,6 +105,7 @@ You'll see the following control panel -
 
 
 Press the HELP button (or the F1 key) for reading the instruction of using the control panel.
+You can also read additional information about each of the algorithm parameters by pressing the **information** tab in the corresponding tab.
 
 Our suggestion is that you'll run each step of the algorithm one after another, and before proceeding 
 to the next step check the mid-results to see if they are good -
@@ -130,22 +131,24 @@ In the bottom of the control panel you'll see a textbox where the output of the 
 Most of it is what the algorithm is running at the moment, and some of it are relevant measurements - 
 After the calibration process is done, several error calculations will be printed.
 For each camera the following error calculations will be printed -
-* Average Mean Error - the mean error between the inliers of the sphere and the found sphere model (using MSAC). \
+* **Average Mean Error** - the mean error between the inliers of the sphere and the found sphere model (using MSAC). \
 The lower the number is, the found sphere model is more accurate.
-* Average Radius Error - the difference between the average of the found sphere models and the real sphere radius \
+* **Average Radius Error** - the difference between the average of the found sphere models and the real sphere radius \
 (inserted as a parameter). The smaller it is the more simillar the found sphere models to the real sphere. \
 This error can occur due to an error in the sphere radius measurement and inaccuracies of the camera. \
 If this number is large, consider that some of the errors is significant and the results might be bad.
 
 For each pair of cameras the following calculations will be printed -
-* MSE - the mean square error between the sphere's centroids after the transformation. \
+* **MSE** - the mean square error between the sphere's centroids after the transformation. \
 In general, low MSE error implies that the transformation is good, but to be sure, \
 check the results of the alignment.
-* Valid spheres - the percentage of found sphere that their radius was inside of the allowed radius range. \
+* **Valid spheres percentage** - the percentage of found sphere that their radius was inside of the allowed radius range. \
 for higher values there will be more data to process, but some sphere might not be accurate.
 
 After the registration, the following error calculations will be printed - 
-* 
+* **RMSE** - the root mean square error of the registration. The smaller the error the better the registartion. \
+For some registrations, the RMSE is small, but the registration is visibly bad, so in order to see if the registration \
+gives good results, load the registered point clouds and check its quality.
 
 
 
