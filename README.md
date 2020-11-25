@@ -115,6 +115,11 @@ aligned correctly. Parts of the hand from differnet cameras will be colored in d
 * In the regitration step, select the point clouds (depth images) which you think might give bad results (for example - noisy point clouds, \
 scans where the hand moved, etc.)
 * After the registration step run the denoising after registration.
+* The registration point cloud results' names are - 
+- "registered" - registration of the aligned point clouds.
+- "registered_denoised" - denoised "registered" point cloud.
+- "final" - registration of the denoised aligned point clouds.
+- "final_denoised" - denoised "final" point cloud.
 * After the registration and denoising after registration, check if the results look similar to the scanned hand. If so\
  run the reconstruction step. To see the reconstruction results, open the file in Meshlab or any other application for viewing \
  mesh files.
