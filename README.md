@@ -34,15 +34,15 @@ calibrate_and_capture.exe NAME --calibrate --calNum calNum
 ```
 where - 
 * **NAME** - you can insert any name here. It is only important for the captures part.
-* **calNum** - the number of rounds of depth images capturing, used for the calibration process. It need to be large enough, \
-but not bigger than 29. In each round 15 depth images are taken one after another.
+* **calNum** - the number of rounds of depth images capturing, used for the calibration process. \
+It need to be large enough, but not bigger than 29. In each round 15 depth images are taken one after another.
 
 To see the optional arguments, run the following command - 
 ```
 calibrate_and_capture.exe --help
 ```
-Once the app is running, you'll hear a beap sound in the start and the end of each round. Between these beeps, move the sphere \
-slowly around, while it stays in the FOV of at least two cameras at any time (preferably).
+Once the app is running, you'll hear a beap sound in the start and the end of each round. \
+Between these beeps, move the sphere slowly around, while it stays in the FOV of at least two cameras at any time (preferably).
 After each round you'll see the captures you've taken from each camera for a short time.
 
 Once you've done capturing the calibration depth images, a directory named "calibration" will be created, with all the depth images inside it.
@@ -84,12 +84,10 @@ Please run a new calibration. Prevoius calibration might give bad results.
 ### How To Do a Good Capturing Process
 Follow the following guiding lines in order to get good captures - 
 * Rotate the setup at small angles. This will give better registration results.
-* Run enough capture round so that the whole hand will be scanned. \
-5 to 10 rounds shold be enough.
-* If the hand is quite symmetrical, include the elbow in the captures (you can remove it later using the \
-Plane-Cut GUI).
-* Try to keep the hand as steady as you can so the hand will look the same (in term of angles beween the arm and the \
-hand palm for example) in every capture round.
+* Run enough capture round so that the whole hand will be scanned. 5 to 10 rounds shold be enough.
+* If the hand is quite symmetrical, include the elbow in the captures (you can remove it later using the Plane-Cut GUI).
+* Try to keep the hand as steady as you can so the hand will look the same (in term of angles \
+beween the arm and the hand palm for example) in every capture round.
 
 
 ### Running The Algorithm
