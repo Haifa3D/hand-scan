@@ -3,7 +3,7 @@ In this project we created a low-cost 3D scanner of hands for digital fitting of
 
 
 ## Requirements
-* 3 or more SR300 Intel depth cameras.
+* 3 (or 2) SR300 Intel depth cameras.
 * (optional) MATLAB .
 * (optional) python 3.6 .
 
