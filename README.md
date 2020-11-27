@@ -13,7 +13,7 @@ First, download ```control_panel_installer.exe``` and ```plane_cut_installer.exe
 You'll now have 2 new applications installed on your computer - ```hand_scan_3D``` and ```plane_cut```.
 
 Now download ```PoissonRecon.exe```.
-Download it to your computer, and add its path to the environment variables by the name **poisson_path**.
+Download it to your computer, and add its containing directory's full path to the environment variables by the name **poisson_path**.
 Instructions can be found in the following link -
 [Create a new environment variable](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)
 
