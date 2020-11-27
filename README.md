@@ -30,6 +30,7 @@ In order to use or edit the MATLAB code, you'll need to download the `MATLAB Com
 
 
 ## Usage Instructions
+**For further information, please read the project report.**
 
 ### Capture Depth Images
 First, you have to capture the calibration depth images and the scans of the hand (called captures).
@@ -186,8 +187,6 @@ Load the point cloud you want to cut, set the parameters of the plane, and press
 This will result 3 files - 
 the point cloud, the matrix of the locations of the points of the point cloud, and the mesh reconstruction of the point cloud.
 
-
-**For further information, please read the project report.**
 
 ## Results
 Here are the results of two scans of different people - 
