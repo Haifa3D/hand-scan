@@ -1,5 +1,5 @@
 # Hand-Scan
-In this project we created a low-cost 3D scanner of hands for digital fitting of prosthetic hands.
+In this project we created a low-cost 3D scanner for digital fitting of prosthetic hands.
 
 
 ## Requirements
@@ -9,28 +9,34 @@ In this project we created a low-cost 3D scanner of hands for digital fitting of
 
 
 ## Installation
-First, download ```control_panel_installer.exe``` and ```plane_cut_installer.exe``` and run the installers.
-You'll now have 2 new applications installed on your computer - ```hand_scan_3D``` and ```plane_cut```.
+First, from the [applications](applications) folder download ```control_panel_installer.exe``` and ```plane_cut_installer.exe``` and run the installers. You'll now have 2 new applications installed on your computer - ```hand_scan_3D``` and ```plane_cut```.
 
-Now download ```PoissonRecon.exe```.
-Download it to your computer, and add its containing directory's full path to the environment variables by the name **poisson_path**.
-Instructions can be found in the following link -
-[Create a new environment variable](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)
+Now download ```PoissonRecon.exe``` and save it to your project folder. Create a new Environment Variable (see [How to create a new Environment Variables](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)) as follow:
 
-Download ```calibrate_and_capture.exe``` or ```"calibrate_and_capture - no Timer.exe"```.
-You should probably download and use the first one only.
+Variable name: **poisson_path**
+
+Variable value: ```PoissonRecon.exe``` full path (for instance: C:\Users\User\Desktop\3d_scanner\PoissonRecon.exe).
+
+And finally download ```calibrate_and_capture.exe```.
 
 
 ## Dependencies
-In order to use or edit the python code you'll need to download the `pyrealsense2` module for python using `pip`:
+In order to use or edit the python code (the data acquisition step) you'll need to download the `pyrealsense2` module for python using `pip`:
 ```
 pip install pyrealsense2
 ```
-In order to use or edit the MATLAB code, you'll need to download the `MATLAB Computer Vision Toolbox` add-on.
+In order to use or edit the MATLAB code (the data analysis step), you'll need to download the `MATLAB Computer Vision Toolbox` add-on.
 
 
 ## Usage Instructions
-**For further information, please read the project report.**
+**For further information, please read the [project report](project_report).**
+
+### System Setup
+Mount your SR300 Intel depth cameras on a solid and stable structure.
+120 degree...
+distance from the center of ...
+After the calibration process the cameras must NOT move or rotate with respect to the structure you built.
+You need to have the ability to manualy rotate the structure around the hand, so each scan would be taken from a small different angle at a static state.. 
 
 ### Capture Depth Images
 First, you have to capture the calibration depth images and the scans of the hand (called captures).
