@@ -133,7 +133,7 @@ For the **reconstruction**, you'll need to download ```PoissonRecon.exe``` from 
 We suggest to run each step of the algorithm separately, and to check the mid-results for each step -
 * Select the data directory, enter the calibration sphere circumference, select the calibration folder and select on of the captures folder.
 * in the *advances mode*, go to **calibration** and run it.
-* check if the **calibration** results are good (in terms of low errors - see [error explanation](#control_panel_outputs)).
+* check if the **calibration** results are good (in terms of low errors - see [error explanation](#control-panel-outputs)).
 * go to **alignment** and run it.
 * load one of the aligned point clouds (a/b/c/... .ply) and see if they are aligned correctly. Parts of the hand from different cameras will be colored in different colors for making this observation easier. Check if there are objects in addition to the hand that weren't removed in the **segmentation** process.
 *  After the **alignment**, run the **denoising before registration** and load the denoised point clouds (a/b/..._denoised.ply) and see the results.
