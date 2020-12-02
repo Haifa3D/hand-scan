@@ -5,9 +5,9 @@ In this project we created a low-cost 3D scanner for digital fitting of prosthet
 ## Requirements
 * 3 (or 2) SR300 Intel depth cameras.
 * USB 3.0 Hub Splitter (if your computer does not have enough USB 3.0 ports)
+* a ball (prefered a polystyrene ball) with a known and a relatively large circumference
 * (optional) MATLAB .
 * (optional) python 3.6 .
-* a ball (prefered a polystyrene ball) with a known and a relatively large circumference
 
 
 ## Installation
