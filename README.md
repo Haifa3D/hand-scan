@@ -91,7 +91,7 @@ Then a window of the live depth data of each cameras is presented. Click on the 
 When you are satisfied with the result, press 'c' (notice the live depth data window must be active, if not click on it and press 'c' again) to take the first image. Then rotate the scanner you built by a small angle and press 'c' again. repeat this process **capNum** times. Try that at the end of the process, the end-position of each camera will be close to the intial-postion of the camera next to it, to make sure you covered most possible angles.
 
 
-*To see all optional arguments, run the following command - *
+**To see all optional arguments, run the following command - **
 ```
 YOUR_EXE_FILE_PATH\calibrate_and_capture.exe --help
 ```
