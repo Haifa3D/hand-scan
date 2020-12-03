@@ -78,7 +78,7 @@ After all calibration ROUNDS are completed, a directory named "calibration" will
 
 Now it is time to scan the hand. Run the following command line - 
 ```
-calibrate_and_capture.exe NAME --capture --capNum capNum --normals --timer timer
+YOUR_EXE_FILE_PATH\calibrate_and_capture.exe NAME --capture --capNum capNum --normals --timer timer
 ```
 where - 
 * **NAME** - the name of the directory where the captures will be saved.
@@ -93,7 +93,7 @@ When you are satisfied with the result, press 'c' (notice the live depth data wi
 
 *To see all optional arguments, run the following command - *
 ```
-calibrate_and_capture.exe --help
+YOUR_EXE_FILE_PATH\calibrate_and_capture.exe --help
 ```
 
 ### How To Do a Good Calibration Process
@@ -187,8 +187,8 @@ You'll see the following app -
 Load the point cloud you want to cut.
 Toggle between the 'original' view where you can see the original point-cloud and the 'cut-plane' view where you can see the red-green anotation of the model (red points will be removed from the final model). Set the parameters of the plane to change the plane cut of the model, and press the save button.
 
-This will result 3 files - 
-the point cloud, the matrix of the locations of the points of the point cloud, and the mesh reconstruction of the point cloud.
+This will result 2 files - 
+the output point cloud and the mesh reconstruction of this point cloud.
 
 
 ## Results
