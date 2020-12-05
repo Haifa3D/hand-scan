@@ -44,6 +44,7 @@ Mount your SR300 Intel depth cameras on a solid and stable structure. We built i
 
 Try to mount the cameras in a position that each camera is faced toward the scanner center while the angle between each adjacent camera is the largest - we used 3 cameras mounted at 120 degree from each other (see the blue angle in the above image).
 The distance between each camera and the scanner center should be between 40-70cm~ (the red line in the above image).
+To reduce background noise we used a black non-woven fabric to cover the whole structure. 
 
 After the calibration process the cameras **must NOT** move or rotate with respect to **the structure** you built.
 You need to have the ability to manualy rotate the structure around the hand, so several scans could be taken from small different angles at a static state.
