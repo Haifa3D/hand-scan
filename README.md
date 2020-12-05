@@ -36,13 +36,19 @@ In order to use or edit the MATLAB code (the data analysis step), you'll need to
 ### System Setup
 In this step we shall setup our rotatable scanner.
 
-Mount your SR300 Intel depth cameras on a solid and stable structure.
-120 degree...
-distance from the center of ...
-After the calibration process the cameras must NOT move or rotate with respect to the structure you built.
-You need to have the ability to manualy rotate the structure around the hand, so each scan would be taken from a small different angle at a static state.. 
 
-Make a hole in your polystyrene ball and insert to it a stick so you could hold it and wave the ball during the calibration step. Try not to ruin the ball circular shape especially if the ball is relatively small.
+<img src="images/system_setup.png" alt="diagram" width="277"/>   <img src="images/scanner.gif" alt="scanner_gif" width="382"/>  
+
+
+Mount your SR300 Intel depth cameras on a solid and stable structure. We built it using some aluminum and plastic tubes and common connectors (we actually used an old kids'  football/soccer goal post and 3D printed connectors we designed).
+
+Try to mount the cameras in a position that each camera is faced toward the scanner center while the angle between each adjacent camera is the largest - we used 3 cameras mounted at 120 degree from each other (see the blue angle in the above image).
+The distance between each camera and the scanner center should be between 40-70cm~ (the red line in the above image).
+
+After the calibration process the cameras **must NOT** move or rotate with respect to **the structure** you built.
+You need to have the ability to manualy rotate the structure around the hand, so several scans could be taken from small different angles at a static state.
+
+Make a hole in your polystyrene ball and insert to it a stick so you could hold it and wave the ball during the calibration step (see image above). Try not to ruin the ball circular shape especially if the ball is relatively small.
 
 ### Capture Depth Images
 In this step we shall capture the depth images of the hand.
