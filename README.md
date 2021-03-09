@@ -17,7 +17,7 @@ Now download ```PoissonRecon.exe``` and save it to your project folder. Create a
 
 Variable name: **poisson_path**
 
-Variable value: ```PoissonRecon.exe``` full path (for instance: C:\Users\User\Desktop\3d_scanner\PoissonRecon.exe).
+Variable value: ```PoissonRecon.exe``` full path without "\PoissonRecon.exe" (for instance: ```C:\Users\User\Desktop\3d_scanner```).
 
 And finally download ```calibrate_and_capture.exe```.
 
