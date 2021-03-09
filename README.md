@@ -13,7 +13,8 @@ In this project we created a low-cost 3D scanner for digital fitting of prosthet
 ## Installation
 First, from the [applications](applications) folder download ```control_panel_installer.exe``` and ```plane_cut_installer.exe``` and run the installers. You'll now have 2 new applications installed on your computer - ```hand_scan_3D``` and ```plane_cut```.
 
-Now download ```PoissonRecon.exe``` and save it to your project folder. Create a new Environment Variable (see [How to create a new Environment Variables](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)) as follow:
+Now download ```PoissonRecon.exe``` and save it to your project folder (Taken from http://www.cs.jhu.edu/~misha/Code/AdaptiveMG/).
+Create a new Environment Variable (see [How to create a new Environment Variables](https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0)) as follow:
 
 Variable name: **poisson_path**
 
