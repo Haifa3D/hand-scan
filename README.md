@@ -232,3 +232,6 @@ Here is a scan of the hands of a 14-year-old as a result of trauma -
 ## Acknowledgements
 This project was created by Guy Yoffe and Aviv Golan, under the guidance of Shunit Polinsky.
 We want to thank Haifa3D and the Technion for their support and assistance.
+
+## Donation:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=GGFJLZDB9GWXE)
