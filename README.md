@@ -32,7 +32,7 @@ In order to use or edit the MATLAB code (the data analysis step), you'll need to
 
 
 ## Usage Instructions
-**For further information, please read the [user interface documentation](user interface doc).**
+**For further information, please read the [user interface documentation](https://github.com/Haifa3D/hand-scan/blob/master/user%20interface%20doc/User%20Interface%20Parameters.pdf).**
 
 ### System Setup
 In this step we shall setup our rotatable scanner.
