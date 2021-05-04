@@ -32,7 +32,7 @@ In order to use or edit the MATLAB code (the data analysis step), you'll need to
 
 
 ## Usage Instructions
-**For further information, please read the [project report](project_report).**
+**For further information, please read the [user interface documentation](user interface doc).**
 
 ### System Setup
 In this step we shall setup our rotatable scanner.
